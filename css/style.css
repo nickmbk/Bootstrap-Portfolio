@@ -14,6 +14,8 @@
     --text-xl: calc(var(--font-size-base) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
 }
 
+/* font properties */
+
 body {
     font-family: var(--main-font);
 }
@@ -22,19 +24,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-h1 {
+h1, .xl-text {
     font-size: var(--text-xl);
 }
 
-h2 {
+h2, .lg-text {
     font-size: var(--text-lg);
 }
 
-h3 {
+h3, .md-text {
     font-size: var(--text-md);
 }
 
-h4 {
+h4, .sm-text {
     font-size: var(--text-sm);
 }
 
@@ -42,15 +44,21 @@ p {
     font-size: var(--text-sm);
 }
 
-.nav-name {
-    font-size: var(--text-md);
+/* jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+    background-image: url("../images/hero-bg.jpg");
+    background-size:  cover;
+    background-repeat: no-repeat;
 }
 
-.nav-anchors {
-    font-size: var(--text-sm);
+.hero img {
+    border-radius: 50%;
+    /* flip image - found solution on w3schools
+    https://www.w3schools.com/howto/howto_css_flip_image.asp */
+    transform: scaleX(-1);
 }
-
-
 
 /* Media Queries */
 
