@@ -47,10 +47,10 @@ p {
 /* jumbotron */
 
 .jumbotron {
-    background-color: transparent;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/bg-image.jpg");
     background-size:  cover;
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .hero img {
