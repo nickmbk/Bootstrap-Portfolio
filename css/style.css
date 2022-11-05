@@ -1,0 +1,81 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --main-font: "Quicksand", sans-serif;
+
+    /* responsive font-sizes, adapted from article we were provided
+    https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd */
+    --font-size-base: 1em;
+    --font-size-scale: 1.2;
+
+    --text-xs: var(--font-size-base);
+    --text-sm: calc(var(--font-size-base) * var(--font-size-scale));
+    --text-md: calc(var(--font-size-base) * var(--font-size-scale) * var(--font-size-scale));
+    --text-lg: calc(var(--font-size-base) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
+    --text-xl: calc(var(--font-size-base) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: var(--text-xl);
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+
+h3 {
+    font-size: var(--text-md);
+}
+
+h4 {
+    font-size: var(--text-sm);
+}
+
+p {
+    font-size: var(--text-sm);
+}
+
+.nav-name {
+    font-size: var(--text-md);
+}
+
+.nav-anchors {
+    font-size: var(--text-sm);
+}
+
+
+
+/* Media Queries */
+
+/* responsie text changes */
+
+@media (min-width: 576px) {
+    :root {
+    --font-size-scale: 1.25;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+    --font-size-scale: 1.3;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+    --font-size-scale: 1.35;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+    --font-size-scale: 1.4;
+    }
+}
