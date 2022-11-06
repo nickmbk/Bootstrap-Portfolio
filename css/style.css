@@ -52,6 +52,22 @@ h4, .sm-text {
     font-size: var(--text-sm);
 }
 
+/* Navbar */
+
+.nav-colors {
+    background-color: #961C07;
+}
+
+.nav-colors a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-colors a:hover {
+    color: #E8705A;
+}
+
+
 
 /* jumbotron */
 
@@ -108,6 +124,20 @@ h4, .sm-text {
     margin: 0 auto;
 }
 
+.about-contact a {
+    color: #E43414;
+    text-decoration: none;
+}
+
+.about-contact a:hover {
+    color: #000000;
+}
+
+/* Footer */
+
+footer {
+    height: 80px;
+}
 
 /* Media Queries */
 
