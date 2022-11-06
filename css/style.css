@@ -3,7 +3,7 @@
     --heading-font: "Roboto Mono", monospace;
     --main-font: "Quicksand", sans-serif;
 
-    /* responsive font-sizes, adapted from article we were provided
+    /* responsive font-sizes to change size of font as the screen size changes, adapted from article we were provided
     https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd */
     --font-size-base: 1em;
     --font-size-scale: 1.2;
@@ -19,7 +19,7 @@
     --text-anchor: #FFFFFF;
     --card-color: #E43414;
     --h3-border: #14E38B;
-    --about-a-hover: #FFFFFF;
+    --about-a-hover: #000000;
     --nav-a-hover: #E8705A;
 }
 
@@ -45,16 +45,8 @@ h2, .lg-text {
     font-size: var(--text-lg);
 }
 
-.h2-border {
-    border-bottom: 5px solid var(--primary-bg-color);
-}
-
 h3, .md-text {
     font-size: var(--text-md);
-}
-
-.h3-border {
-    border-bottom: 3px solid var(--h3-border);
 }
 
 h4, .sm-text {
@@ -82,6 +74,18 @@ h4, .sm-text {
 }
 
 /* Work Section */
+
+/* border properties, underlines h2 and h3 elements */
+
+.h2-border {
+    border-bottom: 5px solid var(--primary-bg-color);
+}
+
+.h3-border {
+    border-bottom: 3px solid var(--h3-border);
+}
+
+/* card effects */
 
 .card-enhancements, .card-enhancements img {
     transition: ease-out 1s;
@@ -120,6 +124,8 @@ h4, .sm-text {
     margin: 0 auto;
 }
 
+/* link colors in about-contact section */
+
 .about-contact a {
     color: var(--card-color);
     text-decoration: none;
@@ -139,6 +145,8 @@ footer {
     background-color: var(--primary-bg-color);
 }
 
+/* link colors in footer section */
+
 .nav-colors a {
     color: var(--about-a-hover);
     text-decoration: none;
@@ -148,9 +156,10 @@ footer {
     color: var(--nav-a-hover);
 }
 
+
 /* Media Queries */
 
-/* responsie text changes */
+/* responsive text changes, makes all fonts reduce in size as the screen gets smaller */
 
 @media (min-width: 576px) {
     :root {
@@ -163,6 +172,7 @@ footer {
     --font-size-scale: 1.3;
     }
     
+    /* changes logo sizes in Skills section as the screen size gets smaller */
     .logo-size {
         max-height: 150px;
     }

@@ -17,6 +17,8 @@
 </head>
 <body>
     <!-- NavBar -->
+
+    <!-- Tried to use my own colors for the text but when I do the hamburger menu is not visible so have had to stick to bootstraps colors -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-colors">
         <a class="navbar-brand md-text" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,20 +42,23 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- used bootstraps text-white class where I can to change text color, which has resulted in less custom css -->
         <div class="jumbotron jumbotron-fluid text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 text-center text-md-left">
+                    <div class="col-12 col-md-7 col-lg-8 text-center text-md-left">
                         <h1>Nick Misselbrook</h1>
                         <p class="md-text">Junior Front-End Web Developer</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <!-- used an avatar until I can get a good photo -->
                         <img src="./images/avatar.jpg" class="img-fluid p-5 p-md-0" alt="A beautiful sunset, setting between palm tress on a beach - provided by Pixabay">
                     </div>
                 </div>            
             </div>
         </div>
     </section>
+    <!-- used a main element for the main content of the page, to keep a good use of semantics -->
     <main class="container">
         <!-- Work Section -->
         <section class="work" id="work">
@@ -65,7 +70,7 @@
                 </div>
                 <!-- Row 1 -->
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card text-center mt-4 mb-4 card-enhancements">
                             <div class="card-header sm-text bg-red">
                             Portfolio Project 1
@@ -81,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card text-center mt-4 mb-4 card-enhancements">
                             <div class="card-header sm-text bg-red">
                             Portfolio Project 2
@@ -97,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card text-center mt-4 mb-4 card-enhancements">
                             <div class="card-header sm-text bg-red">
                                 Portfolio Project 3
@@ -116,7 +121,7 @@
                 </div>
                 <!-- Row 2 -->
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 offset-lg-2">
+                    <div class="col-12 col-lg-4 offset-lg-2">
                         <div class="card text-center mt-4 mb-4 card-enhancements">
                             <div class="card-header sm-text bg-red">
                             Portfolio Project 4
@@ -132,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card text-center mt-4 card-enhancements">
                             <div class="card-header sm-text bg-red">
                                 Portfolio Project 5
@@ -158,34 +163,34 @@
             <!-- added bootstrap text-center class to container so all text within is centered -->
             <div class="container text-center">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12">
                         <h2 class="h2-border mt-5 mb-5">Skills</h2>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/html-logo.png" alt="HTML 5 logo" class="image-fluid logo-size">
                         <p class="sm-text">HTML</p>
                     </div>
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/css-logo.png" alt="CSS 3 logo" class="image-fluid logo-size">
                         <p class="sm-text">CSS</p>
                     </div>
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/git-logo.png" alt="Git logo" class="image-fluid logo-size">
                         <p class="sm-text">Git</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/js-logo.png" alt="JavaScript logo" class="image-fluid logo-size">
                         <p class="sm-text">JavaScript</p>
                     </div>
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/nodejs-logo.png" alt="Node JS logo" class="image-fluid logo-size">
                         <p class="sm-text">Node.js</p>
                     </div>
-                    <div class="col-4 col">
+                    <div class="col-4">
                         <img src="./images/logos/reactjs-logo.png" alt="React JS logo" class="image-fluid logo-size">
                         <p class="sm-text">React JS</p>
                     </div>
@@ -198,35 +203,37 @@
         <section class="about-contact mt-5 mb-4" id="about-contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <div class="col-12 col-md-7">
                         <h3 class="h3-border text-center text-md-left">About Me</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat adipisci iusto quidem odit dignissimos quod, officia, nihil quibusdam, cupiditate consequatur neque aperiam libero ducimus vitae harum voluptatum ipsa. Repudiandae, totam.</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="col-12 col-md-5">
                         <!-- added bootstrap text-center class to container so all text within is centered -->
                         <div class="container text-center text-md-right">
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="col-12">
                                     <h3 class="h3-border">Contact</h3>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="col-12">
                                     <p><a href="mailto:nick.mbk@hotmail.co.uk"><i class="fas fa-envelope"></i> nick.mbk@hotmail.com</a></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <p><a href="#"><i class="fas fa-phone"></i> 555-555-555</a></p>
+                                <div class="col-12">
+                                    <p><a href="callto:555-555-555"><i class="fas fa-phone"></i> 555-555-555</a></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="col-12">
                                     <div class="container text-center justify-content-md-end">
                                         <div class="row">
-                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/github-logo.png" class="image-fluid logo-size-sm d-block" alt="GitHub logo"><a href="https://www.github.com/nickmbk">GitHub<br />nickmbk</a></div>
-                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/twitter-logo.png" class="image-fluid logo-size-sm d-block" alt="Twitter logo"><a href="https://www.twitter.com/nickmbk">Twitter<br />nickmbk</a></div>
-                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/linkedin-logo.png" class="image-fluid logo-size-sm d-block" alt="LinkedIn logo"><a href="https://www.linkedin.com/nick.mbk">LinkedIn<br />nickmbk</a></div>
+                                            <!-- taken the right padding away from each column to align better to the right side on bigger screens but added back
+                                            when going to smaller screens when it's central -->
+                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/github-logo.png" class="image-fluid logo-size-sm d-block" alt="GitHub logo"><a href="https://www.github.com/nickmbk" target="_blank">GitHub<br />nickmbk</a></div>
+                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/twitter-logo.png" class="image-fluid logo-size-sm d-block" alt="Twitter logo"><a href="https://www.twitter.com/nickmbk" target="_blank">Twitter<br />nickmbk</a></div>
+                                            <div class="col mt-md-2 pr-auto pr-md-0 "><img src="images/logos/linkedin-logo.png" class="image-fluid logo-size-sm d-block" alt="LinkedIn logo"><a href="https://www.linkedin.com/in/nickmbk" target="_blank">LinkedIn<br />nickmbk</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +249,7 @@
     </main>
 
     <!-- Footer -->
-
+    <!-- added flexbox to the footer to have more control over the placement of the links -->
     <footer class="mt-5 nav-colors d-flex justify-content-center align-items-center">
         <ul class="nav sm-text">
             <li class="nav-item ml-3 ml-md-5">
