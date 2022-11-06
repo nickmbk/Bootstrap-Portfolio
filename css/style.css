@@ -98,8 +98,16 @@ h4, .sm-text {
 /* Skills Section */
 
 .logo-size {
-    max-height: 100px;
+    max-height: 80px;
 }
+
+/* About Contact Section */
+
+.logo-size-sm {
+    max-height: 50px;
+    margin: 0 auto;
+}
+
 
 /* Media Queries */
 
