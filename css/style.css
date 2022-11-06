@@ -19,7 +19,7 @@
     --text-anchor: #FFFFFF;
     --card-color: #E43414;
     --h3-border: #14E38B;
-    --about-a-hover: #000000;
+    --about-a-hover: #FFFFFF;
     --nav-a-hover: #E8705A;
 }
 
@@ -61,23 +61,6 @@ h4, .sm-text {
     font-size: var(--text-sm);
 }
 
-/* Navbar */
-
-.nav-colors {
-    background-color: var(--primary-bg-color);
-}
-
-.nav-colors a {
-    color: var(--text-anchor);
-    text-decoration: none;
-}
-
-.nav-colors a:hover {
-    color: var(--nav-a-hover);
-}
-
-
-
 /* jumbotron */
 
 .jumbotron {
@@ -85,6 +68,10 @@ h4, .sm-text {
     background-size:  cover;
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+.hero p {
+    font-weight: bold;
 }
 
 .hero img {
@@ -146,6 +133,19 @@ h4, .sm-text {
 
 footer {
     height: 80px;
+}
+
+.nav-colors {
+    background-color: var(--primary-bg-color);
+}
+
+.nav-colors a {
+    color: var(--about-a-hover);
+    text-decoration: none;
+}
+
+.nav-colors a:hover {
+    color: var(--nav-a-hover);
 }
 
 /* Media Queries */
